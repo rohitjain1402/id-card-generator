@@ -1,0 +1,90 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "58efebc009311af522476054b6936794",
+    "packages": [
+        {
+            "name": "shuchkin/simplexlsx",
+            "version": "0.8.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shuchkin/simplexlsx.git",
+                "reference": "360b9a0aaaec12da52ce0fa39a92e1942eb413ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shuchkin/simplexlsx/zipball/360b9a0aaaec12da52ce0fa39a92e1942eb413ed",
+                "reference": "360b9a0aaaec12da52ce0fa39a92e1942eb413ed",
+                "shasum": ""
+            },
+            "require": {
+                "ext-libxml": "*",
+                "ext-simplexml": "*",
+                "ext-zlib": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/SimpleXLSX.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Shuchkin (SMSPILOT)",
+                    "email": "sergey.shuchkin@gmail.com",
+                    "homepage": "http://www.shuchkin.ru/"
+                }
+            ],
+            "description": "Parse and retrieve data from Excel XLSx files. MS Excel 2007 workbooks PHP reader.",
+            "homepage": "https://github.com/shuchkin/simplexlsx",
+            "keywords": [
+                "backend",
+                "excel",
+                "parser",
+                "php",
+                "xlsx"
+            ],
+            "time": "2020-08-27T18:55:37+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
+ <td><?php echo $row->user_id; ?></td>
+        <td><?php echo $row->Firstname; ?></td>
+        <td><?php echo $row->Lastname; ?></td>
+        <td><?php echo $row->Department; ?></td>
+        <td><?php echo $row->Designation; ?></td>
+        <td><?php echo $row->Emp_ID; ?></td>
+        <td><?php echo $row->DOB; ?></td>
+        <td><?php echo $row->Mobile; ?></td>
+        <td><?php echo $row->Emergency; ?></td>
+        <td><?php echo $row->Blood_group; ?></td>
+        <td><?php echo $row->Dateofissue; ?></td>
+        <td><?php echo $row->Dateofexpiry; ?></td>
+      </tr>
+      <?php 
+ $con = new PDO("mysql:host=localhost;dbname=employeedb",'root','');
+    if (isset($_POST['search'])){
+      $str = $_POST['submit'];
+      $sth = $con->prepare("SELECT * FROM 'employeedata' WHERE user_id ='$str'");
+      $sth ->setFetchMode(PDO:: FETCH_OBJ);
+      $sth ->execute();
+
+      if($row= $sth->fetch())
+      {
+        ?><br>

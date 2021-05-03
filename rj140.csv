@@ -1,0 +1,4 @@
+Firstname,Lastname,Address,Department,Designation,Emp_ID,DOB,Mobile,Emergency,Blood_group,Dateofissue,Dateofexpiry,Images
+Ashok,Singh,Ruby,IT,Software Developer,2,20-10-1999,4321312543,5432333435,B,12-01-2020,12-03-2020,emp_img/1.png
+Sagar,Singh,Part Street,Reporting,Reporter,23,20-10-1999,9331312543,6432373475,B,12-01-2020,12-03-2020,emp_img/1.png
+Pritam,Sankhari,Budge Budge,IT,Web Developer,8,20-10-1999,8765432576,8767786544,B,12-01-2020,12-03-2020,emp_img/1.png

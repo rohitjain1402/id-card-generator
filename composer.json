@@ -1,0 +1,5 @@
+{
+    "require": {
+        "shuchkin/simplexlsx": "^0.8.19"
+    }
+}

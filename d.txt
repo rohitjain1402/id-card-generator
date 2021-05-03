@@ -1,0 +1,21 @@
+.emergency{
+	top:140mm;
+	/*left:730px;*/
+	left:calc(50% + 15px);
+	position:absolute;
+	/*font-size:8px;*/
+}
+UPDATE mysql.user SET user='newusername',
+ password=PASSWORD('newpassword') WHERE user='root';
+ FLUSH PRIVILEGES;
+
+ USE mysql;
+
+UPDATE user 
+SET authentication_string = PASSWORD('dolphin')
+WHERE user = 'dbadmin' AND 
+      host = 'localhost';
+
+FLUSH PRIVILEGES;
+
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';

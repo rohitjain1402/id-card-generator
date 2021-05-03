@@ -1,0 +1,53 @@
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  /*width: 200px;*/
+  background-color: #f1f1f1;
+  /*position: fixed;*/
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a.active {
+  background-color: black;
+  color: white;}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+ 
+#employeedata {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#employeedata th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#employeedata tr:nth-child(even){background-color: #f2f2f2;}
+
+#employeedata tr:hover {background-color: #ddd;}
+
+#employeedata th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+#employeedata td{
+  /*margin: 10px;*/
+  padding: 5px;
+}

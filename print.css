@@ -1,0 +1,194 @@
+/*@page{
+	size: A4;
+	margin: 0;
+
+}
+print-btn{
+	display: none;
+	visibility: none;
+}*/
+.front-page{
+	/*background-image: url("img/card_sanmarg_P1.jpg");*/
+	/*height: */
+	/*width:100%;*/
+	/*position: absolute;*/
+	/*left:0;*/
+	/*height: 100vh;*/
+	/*margin: 0;*/
+	/*width: 17cm;*/
+	/*min-height: 27.9cm;*/
+}
+/*@front-page{
+	size:a3;
+}*/
+.back-page img{
+		/*display: none;*/
+}
+
+
+.single-print-btn{
+	background-color:dodgerblue;
+	color: white;
+	font-family: tahoma;
+	padding:15px;
+	border: 0px;
+	border-radius:5px;
+	cursor: pointer;
+}
+.single-print-btn:hover{
+	background-color:blue;
+}
+.id-card *{
+	/*color: white;*/
+}
+.id-card{
+	font-family: tahoma;
+	position: relative;
+}
+.id-card-view{
+	position:relative;
+	/*border:1px solid black;*/
+	font-weight:700;
+}
+.id-card>div{
+	/*position:relative;*/
+	/*font-size:22px;*/
+	/*position:relative;*/
+	page-break-after:always;
+	/*text-shadow:1px 1px;*/
+}
+.front-page,.back-page{
+
+	/*color:black;*/
+	display:none;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+@media print{
+	@page{
+		position:absolute;
+		margin: 0;
+		background-color:yellow;
+		size:2in calc(3in + 2.67mm);
+		color:white;
+		font-size:8px;
+	}	
+}
+
+
+.front-page>img{
+	width:100%;
+	/*width:40cm;*/
+	/*width: 600px;*/
+	/*height: auto;*/
+}
+.back-page>img{
+	/*width:40cm;*/
+	width:100%;
+	/*height: 27.9cm;	*/
+	/*height: 22.3cm;	*/
+}
+.front-page div,.back-page div{
+	position:absolute;
+
+}
+.empimg{
+	/*top:239px;*/
+	top:18.9mm;
+	left:50%;
+	transform:translateX(-50%);
+	/*border:1px solid black;*/
+	width:21.5mm;
+}
+.empimg img{
+	transform:translateX(0%);
+	/*width:273px;*/
+	width:100%;
+	height:27mm;
+
+}
+.name{
+	top:46mm;
+	left:50%;
+	transform:translateX(-50%);
+	font-size:8px;
+	/*color: black;*/
+
+	
+}
+/*.lastname{
+	top:245px;
+	left:220px;
+}*/
+.department{
+	top:49mm;
+	left:50%;
+	transform:translateX(-50%);
+	font-size:7px;
+}
+.designation{
+	top:52mm;
+	left:50%;
+	transform:translateX(-50%);
+	width:100%;
+	display:flex;
+	justify-content:center;
+	/*flex-wrap:wrap;*/
+	/*width:100%;*/
+	/*float:center;*/
+	font-size:8px;
+}
+.empid{
+	top:104.8mm;
+	/*left:730px;*/
+	left:calc(50% + 7px);
+	font-size:7px;
+}
+
+.dob{
+	top:107.5mm;
+	/*left:730px;*/
+	left:calc(50% + 7px);
+	font-size:7px;	
+}
+.mobile{
+	top:110.2mm;
+	/*left:730px;*/
+	left:calc(50% + 7px);
+	font-size:7px;
+}
+.emergency{
+	top:113.0mm;
+	/*left:730px;*/
+	left:calc(50% + 7px);
+	font-size:7px;
+}
+
+.bloodgroup{
+	top:116mm;
+	/*left:730px;	*/
+	left:calc(50% + 7px);
+	font-size:7px;
+}
+.dateofexpiry{
+	top:121.5mm;
+	/*left:730px;*/
+	left:calc(50% + 7px);
+	font-size:7px;		
+}
+.dateofissue{
+	top:118.7mm;
+	/*left:730px;*/
+	left:calc(50% + 7px);
+	font-size:7px;
+}
+.qrcode{
+	top:315px;
+	/*left:590px;*/
+	/*left:41%;*/
+	width:82px;			
+}
+.qrcode img{
+	width:76px;
+	/*height:200px;*/
+}
